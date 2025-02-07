@@ -7,6 +7,8 @@
 - Interprétez les résultats de vos visualisations (quelques phrases).
 """
 
+# https://appli-leniniven-rouxel.streamlit.app/ LIEN APPLI DEPLOYEE
+
 ### 1. Importation des librairies et chargement des données
 from encodings.punycode import T
 import os
@@ -17,21 +19,8 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 
-# Chargement des données
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("url_goes_here")
-    }
-   .sidebar .sidebar-content {
-        background: url("url_goes_here")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-df = pd.read_csv(r"TD2/ds_salaries.csv")
+
+df = pd.read_csv('TD2\ds_salaries.csv')
 
 
 
@@ -47,7 +36,7 @@ if st.checkbox("Afficher un aperçu des données"):
 # Create distplot with custom bin_size
 #st.plotly_chart(df, use_container_width=False, sharing="streamlit", theme="streamlit")
 
-fig = st.bar_chart(data=df, x="experience_level", y="salary", x_label=None, y_label=None, color=None, horizontal=False, stack=None, width=None, height=None, use_container_width=True)
+fig = st.bar_chart(data=df, x="experience_level", y="salary", use_container_width=True)
 #st.pyplot(fig)  
 
 
