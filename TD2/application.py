@@ -31,7 +31,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-df = pd.read_csv(r"H:\SAE 6-01\TD1\projet-notebook\ds_salaries.csv")
+df = pd.read_csv(r"TD2/ds_salaries.csv")
 
 
 
