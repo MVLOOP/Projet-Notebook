@@ -20,7 +20,7 @@ import streamlit as st
 import plotly.express as px
 
 
-df = pd.read_csv('TD2\ds_salaries.csv')
+df = pd.read_csv('ds_salaries.csv')
 
 
 
