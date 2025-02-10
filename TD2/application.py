@@ -24,7 +24,7 @@ import plotly.express as px
 file_path = os.path.join(os.path.dirname(__file__), 'ds_salaries.csv')
 df = pd.read_csv(file_path)
 
-df = pd.read_csv(r'TD2\ds_salaries.csv')
+df = pd.read_csv(r'TD2/ds_salaries.csv')
 
 
 
